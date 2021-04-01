@@ -30,16 +30,30 @@ def classify_settings(filename):
 
 #function-2
 def  print_settings(setonlist, setofflist, setdefaultlist) :
-    print("1) Set On keywords:")
-    print('    ',*setonlist, sep='\n    ')
-    print("")
-    print("2) Set Off keywords:")
-    print('    ', *setofflist, sep='\n    ')
-    print("")
-    print("3) Set default keywords:")
-    print('    ', *setdefaultlist, sep='\n    ')
+
 
     pass
+    print("Set On Keywords:")
+    index = 1
+    values = setonlist
+    for value in values:
+        print('    ',index,')', value)
+        index += 1
+    print("")
+    print("Set Off keywords: ")
+    index = 1
+    values = setofflist
+    for value in values:
+        print('    ',index,')', value)
+        index += 1
+    print("")
+    print("Set default keywords:")
+    index = 1
+    values = setdefaultlist
+    for value in values:
+        print('    ',index,')', value)
+        index += 1
+
 
 #Main program, do not modify it.
 if __name__ == "__main__":
